@@ -3,40 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pageStyle.css">
+    <link rel="stylesheet" href="indexStyle.css">
     <title>ABC-EduTech</title>
 </head>
 
 <body>
     <nav id="navbar">
-        <h1>ABC-EduTech</h1>
-        <ul>
+        <h1 class="nav-title">ABC-EduTech</h1>
+        <ul class="nav-list">
             <li class="nav-content"><a href="index.html">Home</a></li>
             <li class="nav-content"><a href="courses.html">Courses</a></li>
             <li class="nav-content"><a href="about.html">About Us</a></li>
             <li class="nav-content"><a href="contact.html">Contact</a></li>
+            <button class="log-btn"><a class="log-btn-link" href="Registration-System/login.html">Log In</a></button>
         </ul>
     </nav>
     <header id="main-header">
         <h1 class="h1">Welcome to ABC-EduTech</h1>
         <p class="discription">Your gateway to quality education and technology resources.</p>
     </header>
-    <div>
+    <hr>
+    <div class="main-container">
         <h2 class="h2">Our Mission</h2>
-        <p class="mission">At ABC-EduTech, our mission is to provide accessible and affordable education resources to
-            learners of all ages. We believe in the power of technology to transform education and are committed to
-            leveraging it to enhance learning experiences.</p>
-        <p class="mission">We offer a wide range of courses, tutorials, and articles on various subjects, including
-            programming, web development, data science, and more. Our content is created by experienced educators and
-            industry professionals to ensure high-quality learning materials.</p>
-        <p class="mission">Join us on this educational journey and unlock your potential with ABC-EduTech!</p>
-        <p>Explore our website to discover more about our offerings and how we can help you achieve your learning goals. </p>
-        <select>
-            <option value="courses.html">Browse Courses</option>
-            <option value="about.html">Learn More About Us</option>
-            <option value="contact.html">Get in Touch</option>
+        <p class="mission">At ABC-EduTech, our mission is to provide accessible and affordable education resources to learners of all ages. We believe in the power of technology to transform education and are committed to leveraging it to enhance learning experiences. We offer a wide range of courses, tutorials, and articles on various subjects, including programming, web development, data science, and more. Our content is created by experienced educators and industry professionals to ensure high-quality learning materials. Join us on this educational journey and unlock your potential with ABC-EduTech! Explore our website to discover more about our offerings and how we can help you achieve your learning goals. </p>
+        <select class="explore" onchange="location = this.value;">
+            <option selected disabled>Courses :</option>
+            <option class="course-opt" value="courses.html">B.Tech CSE</option>
+            <option class="course-opt" value="web.html">Web Development</option>
+            <option class="course-opt" value="programming.html">Programming Languages</option>
         </select>
     </div>
+    <footer class="footer">
+        <p class="footer-text">© 2024 ABC-EduTech. All rights reserved.</p>
+        <p class="footer-text">Follow us on
+            <a class="footer-link" href="https://www.facebook.com/ABC-EduTech" target="_blank">Facebook</a>,
+            <a class="footer-link" href="https://www.twitter.com/ABC-EduTech" target="_blank">Twitter</a>
+            <a class="footer-link" href="https://www.instagram.com/ABC-EduTech" target="_blank">Instagram</a>.
+        </p>
+        <p class="footer-text">Contact us: <a class="footer-link" href="mailto:rajapple6284@gmail.com" target="_blank">
+
+    </footer>
 </body>
 
 </html>
